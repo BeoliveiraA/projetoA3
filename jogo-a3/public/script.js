@@ -185,7 +185,7 @@ function javalisinimigo(){
        
       }
       else{
-        alert("Você foi de base da virginia, americanas, de F, comes e bebes,drake e josh😪")
+        alert("Infelizmente, você perdeu!")
         recarregarAPagina();
       }
   
@@ -280,7 +280,7 @@ function zombieinimigo() {
     heroXp = 10 + 10;
     alert("Você recebeu " + heroXp + " pontos de XP⏫");
   } else {
-    alert("Você foi de base da virginia, americanas, de F, comes e bebes, drake e josh😪");
+    alert("Infelizmente, você perdeu!");
     recarregarAPagina();
   }
 
@@ -370,7 +370,7 @@ function AmigoImaginario() {
     }
   else if (heroVida <= 0 || Disolver == true) 
     {
-      alert("Você foi de base da virginia, americanas, de F, comes e bebes, drake e josh😪");
+      alert("Infelizmente, você perdeu!");
       recarregarAPagina();
     }
   
