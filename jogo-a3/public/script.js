@@ -141,7 +141,7 @@ function pragainimigo(){
         InimigosOcultos();
       }
       else{
-        alert("Infelizmente, você perdeu a guerra")
+        alert("Infelizmente, você perdeu!")
         recarregarAPagina();
       }
   

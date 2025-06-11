@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Merriweather&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Madimi+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @keyframes fire {
   0% {
@@ -78,7 +79,7 @@ td {
 }
 
 .sub-section {
-  border: 2px solid rgb(212, 18, 18);
+  border: 2px solid #4e944f;
   padding: 10px;
   margin: 2px;
   display: inline-block;
@@ -126,7 +127,7 @@ input:focus {
 
 
 button {
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  background: linear-gradient(to right,  #cde990, #4e944f);
   color: #4b1e1e;
   border: none;
   padding: 10px 25px;
@@ -139,7 +140,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #a6c1ee, #fbc2eb);
+  background: linear-gradient(to right, #4e944f, #cde990);   
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
@@ -248,3 +249,41 @@ footer {
   color: black;
   text-align: center;
 }
+
+.titulo-centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espaço entre os itens */
+  font-family: 'Madimi One', cursive;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Madimi One', cursive;
+  background: linear-gradient(to right, #4e944f, #cde990); /* gradiente floresta */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.img-protetor {
+  width: 350px;
+  height: auto
+}
+
+.iniciar{
+display: block;
+  margin: 60px auto 0; /* 40px de espaço acima, centralizado horizontalmente */
+  padding: 12px 24px;
+  font-size: 40px;
+  font-family: 'Madimi One', cursive;
+  background-color: #4CAF50;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
