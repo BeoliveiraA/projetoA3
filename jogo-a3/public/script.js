@@ -108,7 +108,7 @@ function pragainimigo(){
   
   if (heroAtaque >= 20 || heroVida >= 20){
     
-    alert("Você não pode mais lutar com o Pestilantor pois você ja esta muito forte, agora lute com os outros");
+    alert("Você não pode mais lutar com o Veskar pois você ja esta muito forte, agora lute com os outros");
       CaoHabilidado.style.display = "none";
   }
   else{
@@ -118,11 +118,11 @@ function pragainimigo(){
     {
        var playerAtaque = numeroAleatorio(0,heroAtaque);
       
-      alert("Pestilantor tem " + inimigoHP + " de vida");
+      alert("Veskar tem " + inimigoHP + " de vida");
   
   alert("Ataque " + heroName + " causou " + playerAtaque + " de dano😎");
   inimigoHP -= playerAtaque;
-  alert("Pestilantor possui " + inimigoHP + " de vida");
+  alert("Veskar possui " + inimigoHP + " de vida");
   
   // caso o inimigo sobreviva
   if (inimigoHP > 0){
@@ -163,11 +163,11 @@ function javalisinimigo(){
     {
        var playerAtaque = numeroAleatorio(0,heroAtaque);
       
-      alert("O Javali tem " + inimigoHP + " de vida");
+      alert("O Braseon tem " + inimigoHP + " de vida");
   
   alert("Ataque " + heroName + " causou " + playerAtaque + " de dano😎");
   inimigoHP -= playerAtaque;
-  alert("O javali possui " + inimigoHP + " de vida😳");
+  alert("O Braseon possui " + inimigoHP + " de vida😳");
   
   // caso o inimigo sobreviva
   if (inimigoHP > 0){
@@ -245,7 +245,7 @@ function zombieinimigo() {
     var ocorreMordida = Math.random() <= 0.4;  // 40% de chance de ocorrer mordida
 
     if (ocorreMordida) {
-      alert(heroName + " Não conseguiu esquivar da mordida, você perde 1 de vida neste round");
+      alert(heroName + " não conseguiu se esquivar, você perde 1 de vida neste round");
       heroVida--;  // Decrementa a vida do herói
       UpdateHeroStatus();
     } else {
@@ -258,11 +258,11 @@ function zombieinimigo() {
   {
     var playerAtaque = numeroAleatorio(0, heroAtaque);
 
-    alert("O Zombie tem " + inimigoHP + " de vida");
+    alert("O Grunter tem " + inimigoHP + " de vida");
     
     alert("Ataque " + heroName + " causou " + playerAtaque + " de dano😎");
     inimigoHP -= playerAtaque;
-    alert("O Zombie possui " + inimigoHP + " de vida😳");
+    alert("O Grunter possui " + inimigoHP + " de vida😳");
 
      // funçao da habilidade do inimigo
   mordidaLetal();
@@ -314,7 +314,7 @@ function AmigoImaginario() {
     var prender = Math.random() <= 0.5;
 
    if (prender) {
-      alert(heroName + " você foi atacado pelos tentáculos do inimigo, você ficará um round sem movimentos");
+      alert(heroName + " você ficará um round sem movimentos");
      
       alert("Inimigo atacou com " + inimigoATK + " de dano🤕");
       heroVida -= inimigoATK;
@@ -379,23 +379,6 @@ function AmigoImaginario() {
 }
   }
 
-/*function escolherAcaoAleatoria() {
-  
-  var sorteio = Math.random();
-
-  // Use as probabilidades para escolher uma ação
-  if (sorteio < 0.3) {
-    Derreter();
-  } else if (sorteio < 0.6) {
-    Prender();
-  } else {
-     Disolver();
-  }
-}
-*/
-
-// Função Derreter
-// Função para derreter o rosto do jogador
 function Derreter() 
 {
   var derreterRosto = true;
@@ -432,7 +415,7 @@ function Disolver() {
   var absorver = Math.random() <= 0.9;
   
   if (absorver) {
-    alert("O inimigo pegou seu corpo e o absorveu por completo, te derretendo completamente. Você irá morrer, mas você tem a chance de mais um ataque");
+    alert("Você irá morrer, mas você tem a chance de mais um ataque");
     heroVida = 0;
     recarregarAPagina();
     

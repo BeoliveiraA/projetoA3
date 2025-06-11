@@ -29,7 +29,7 @@ background-position: center center;
 background-size: cover;
 text-align: center;
 color: white;
-font-family: 'Raleway', serif;
+font-family: 'Madimi One', cursive;
 
 }
 
@@ -42,7 +42,7 @@ body#inicio {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Madimi One', cursive;
 }
 
 
@@ -51,7 +51,7 @@ h3 {
 }
 
 #text-menu {
-  font-family: 'Cinzel', serif;
+  font-family: 'Madimi One', cursive;
   color: #3a1c1c;
   background-color: #fff8e1;
   padding: 10px;
@@ -68,7 +68,7 @@ h3 {
 
 .section {
   background-color: #301d04a4;
-  border: 4px double #ffffff;
+  border: 4px double #ffffffb6;
   margin: 10px;
   padding-left: 5px;
 }
@@ -79,7 +79,7 @@ td{
 
 .sub-section{
 
-  border: 2px solid rgb(212, 18, 18);
+  border: 2px solid #ffffff;
   padding: 10px;
   margin: 2px;
   display: inline-block;
@@ -106,7 +106,7 @@ input {
   /* tom de marrom */
   border-radius: 10px;
   background-color: #fff8f0;
-  font-family: 'Cinzel', serif;
+  font-family: 'Madimi One', cursive;
   color: #3b2f2f;
   font-size: 1rem;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1),
@@ -129,7 +129,7 @@ button {
   border: none;
   padding: 10px 25px;
   font-size: 1rem;
-  font-family: 'Cinzel', serif;
+  font-family: 'Madimi One', cursive;
   border-radius: 12px;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -206,13 +206,13 @@ img {
 }
 
 .sub-javalis img {
-  height: 159px;
-  width: 190px;
+  height: 138px;
+  width: 200px;
 }
 
 .sub-zombie img {
-  height: 166px;
-  width: 185px;
+  height: 169px;
+  width: 200px;
 }
 
 .boss {
@@ -224,7 +224,7 @@ img {
 
 .boss img {
   width: 200px;         /* Ajuste conforme o visual desejado */
-  height: 190px;        /* Idem */
+  height: 192px;        /* Idem */
   object-fit: contain;  /* Mantém a proporção sem cortar */
   display: block;
   margin: 0 auto;
