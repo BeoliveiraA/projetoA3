@@ -20,16 +20,18 @@
 
 
 body {
-margin: 0;
-padding: 0;
-height: 100vh; /* altura alterada de 97vh para 100vh */
-background-image: url('Img/Fundo.png');
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-text-align: center;
-color: white;
-font-family: 'Madimi One', cursive;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* altura alterada de 97vh para 100vh */
+  background-image: url('Img/Fundo.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: 'Madimi One', cursive;
+  overflow: hidden;
 
 }
 
@@ -73,22 +75,22 @@ h3 {
   padding-left: 5px;
 }
 
-td{
+td {
   border: 2px solid #e7e7e7b0;
 }
 
-.sub-section{
+.sub-section {
 
   border: 2px solid #ffffff;
   padding: 10px;
   margin: 2px;
   display: inline-block;
   margin-bottom: 10px;
-  
+
 
 }
 
-h2{
+h2 {
   color: #e4d17f;
 }
 
@@ -124,7 +126,7 @@ input:focus {
 
 
 button {
-  background: linear-gradient(to right,  #cde990, #4e944f);
+  background: linear-gradient(to right, #cde990, #4e944f);
   color: #4b1e1e;
   border: none;
   padding: 10px 25px;
@@ -137,7 +139,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #4e944f, #cde990);   
+  background: linear-gradient(to right, #4e944f, #cde990);
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
@@ -206,12 +208,12 @@ img {
 }
 
 .sub-javalis img {
-  height: 138px;
+  height: 200px;
   width: 200px;
 }
 
 .sub-zombie img {
-  height: 169px;
+  height: 190px;
   width: 200px;
 }
 
@@ -223,9 +225,12 @@ img {
 }
 
 .boss img {
-  width: 200px;         /* Ajuste conforme o visual desejado */
-  height: 192px;        /* Idem */
-  object-fit: contain;  /* Mantém a proporção sem cortar */
+  width: 200px;
+  /* Ajuste conforme o visual desejado */
+  height: 172px;
+  /* Idem */
+  object-fit: contain;
+  /* Mantém a proporção sem cortar */
   display: block;
   margin: 0 auto;
 }
@@ -251,13 +256,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Espaço entre os itens */
+  gap: 10px;
+  /* Espaço entre os itens */
   font-family: 'Madimi One', cursive;
   font-size: 90px;
   text-align: center;
   margin-top: 50px;
   font-family: 'Madimi One', cursive;
-  background: linear-gradient(to right, #4e944f, #cde990); /* gradiente floresta */
+  background: linear-gradient(to right, #4e944f, #cde990);
+  /* gradiente floresta */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -268,9 +275,10 @@ footer {
   height: auto
 }
 
-.iniciar{
-display: block;
-  margin: 60px auto 0; /* 40px de espaço acima, centralizado horizontalmente */
+.iniciar {
+  display: block;
+  margin: 60px auto 0;
+  /* 40px de espaço acima, centralizado horizontalmente */
   padding: 12px 24px;
   font-size: 40px;
   font-family: 'Madimi One', cursive;
@@ -281,6 +289,136 @@ display: block;
   border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.3s;
-  
+
 }
 
+.caixas {
+  font-family: 'Madimi One', cursive;
+  font-size: 23px;
+  padding: 25px 25px;
+  margin: 60px auto 0;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #000000;
+  background-color: rgb(222, 212, 212);
+  color: #3a1c1c;
+  border-radius: 8px;
+
+}
+
+.avancar {
+  display: block;
+  margin: 60px auto 0;
+  /* 40px de espaço acima, centralizado horizontalmente */
+  padding: 12px 24px;
+  font-size: 40px;
+  font-family: 'Madimi One', cursive;
+  background-color: #4CAF50;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Espaço entre os itens */
+  font-family: 'Madimi One', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Madimi One', cursive;
+  background: linear-gradient(to right, #4e944f, #cde990);
+  /* gradiente floresta */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.comecar {
+  display: block;
+  margin: 60px auto 0;
+  /* 40px de espaço acima, centralizado horizontalmente */
+  padding: 12px 24px;
+  font-size: 30px;
+  font-family: 'Madimi One', cursive;
+  background-color: #4CAF50;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.lista {
+  display: flex;
+  gap: 1em;
+
+}
+
+.item {
+  width: 250px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  left: 14%;
+  gap: 40px;
+}
+
+.efeito {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+
+}
+
+.teste {
+  color: white;
+  width: 80%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 1s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item:hover .teste {
+  opacity: 1;
+  top: 50%;
+}
+
+.lista:hover .item:not(:hover) {}
+
+.tituloinimigo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Espaço entre os itens */
+  font-family: 'Madimi One', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Madimi One', cursive;
+  background: linear-gradient(to right, #4e944f, #cde990);
+  /* gradiente floresta */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
