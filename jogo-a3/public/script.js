@@ -18,15 +18,15 @@ var heroAtkUpdrateButton = document.getElementById("atk-upgrade-ui");
 
 //varivais de inimigos
 var BossHabilitado = document.getElementById("Boss");
-var JavaliHabilitado = document.getElementById("Javali");
-var CaoHabilidado = document.getElementById("Cao");
-var ZombieHabilidado = document.getElementById("Zombie");
+var BraseonHabilitado = document.getElementById("Braseon");
+var VeskarHabilidado = document.getElementById("Veskar");
+var GrunterHabilidado = document.getElementById("Grunter");
 
 //tirando as fotos
 BossHabilitado.style.display = "none";
-JavaliHabilitado.style.display = "none";
-CaoHabilidado.style.display = "none";
-ZombieHabilidado.style.display = "none";
+BraseonHabilitado.style.display = "none";
+VeskarHabilidado.style.display = "none";
+GrunterHabilidado.style.display = "none";
 
 //tirando os botoes
 heroAtkUpdrateButton.style.display = "none";
@@ -61,7 +61,7 @@ function CreateHero() {
 
     //fazendo o documento html (menu) sair como for bloqueado usando display 
     secPlayerMenu.style.display = "none";
-    CaoHabilidado.style.display = "inline-block";
+    VeskarHabilidado.style.display = "inline-block";
 
   }
 
@@ -109,7 +109,7 @@ function pragainimigo() {
   if (heroAtaque >= 20 || heroVida >= 20) {
 
     alert("Você não pode mais lutar com o Veskar pois você ja esta muito forte, agora lute com os outros");
-    CaoHabilidado.style.display = "none";
+    VeskarHabilidado.style.display = "none";
   }
   else {
     //ciclo para os inimigos
@@ -150,7 +150,7 @@ function pragainimigo() {
   }
 }
 
-function javalisinimigo() {
+function Braseoninimigo() {
 
   var inimigoHP = 15;
   var inimigoATK = 8;
@@ -230,11 +230,11 @@ function BOSS() {
 
 //ocultar os inimigos para aparecer somente depois de derrotar o primeiro 
 function InimigosOcultos() {
-  JavaliHabilitado.style.display = "inline-block";
-  ZombieHabilidado.style.display = "inline-block";
+  BraseonHabilitado.style.display = "inline-block";
+  GrunterHabilidado.style.display = "inline-block";
 }
 
-function zombieinimigo() {
+function Grunterinimigo() {
   var inimigoHP = 20;
   var inimigoATK = 8;
   var playerAtaque;
@@ -321,7 +321,7 @@ function AmigoImaginario() {
     }
 
     else {
-      alert("O inimigo tentou usar os tentáculos, mas ele errou.");
+      alert("O inimigo tentou usar os Megadrones, mas ele errou.");
     }
   }
 
