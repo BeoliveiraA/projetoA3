@@ -175,7 +175,7 @@ img {
 }
 
 
-.sub-javalis {
+.sub-Braseon {
   border-radius: 8px;
   padding: 10px;
   width: 190px;
@@ -183,7 +183,7 @@ img {
 }
 
 
-.sub-zombie {
+.sub-grunter {
   border-radius: 8px;
   padding: 10px;
   width: 185px;
@@ -207,12 +207,12 @@ img {
   display: none;
 }
 
-.sub-javalis img {
+.sub-Braseon img {
   height: 200px;
   width: 200px;
 }
 
-.sub-zombie img {
+.sub-grunter img {
   height: 190px;
   width: 200px;
 }
@@ -355,6 +355,8 @@ footer {
   transition: background-color 0.3s;
 }
 
+/*Efeito na tela dos personagens*/
+
 .lista {
   display: flex;
   gap: 1em;
@@ -370,7 +372,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  left: 14%;
+  left: 16%;
   gap: 40px;
 }
 
@@ -381,7 +383,7 @@ footer {
 
 }
 
-.teste {
+.efeitoHover {
   color: white;
   width: 80%;
   position: absolute;
@@ -396,7 +398,7 @@ footer {
   transform: scale(1.05);
 }
 
-.item:hover .teste {
+.item:hover .efeitoHover {
   opacity: 1;
   top: 50%;
 }
